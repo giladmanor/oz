@@ -24,8 +24,6 @@ class ApiController < ApplicationController
       :message=>"counter: #{counter}",
     }
 
-    
-
     Sender.post req,counter
     render :json=>{:status=>"ok"}
   end

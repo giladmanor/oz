@@ -45,4 +45,5 @@ group :development do
   gem 'spring'
 end
 
+gem 'tzinfo-data'
 gem 'rest-client', '~> 1.8'
