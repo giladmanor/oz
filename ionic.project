@@ -1,0 +1,9 @@
+{
+  "name": "oz",
+  "app_id": "",
+  "documentRoot": "tinman/",
+  "watchPatterns": [
+    "tinman/*",
+    "tinman/*/**"
+  ]
+}

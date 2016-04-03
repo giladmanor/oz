@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>welcome to oz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">Hi, What's your name?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+  <div class="box hide">
+  	<h2>:)</h2>
+  	<div class="t1 hide">
+  		<button onclick="sendT1()">click me</button>
+  	</div>
+  	<div class="t2 hide">
+  		<h2>AWESOME!</h2>
+  		<p>next chalange is fixing the count for clicks on <button onclick="sendT2()">this</button> in the ruby controller</p>
+  	</div>
+  	<div class="t3 hide">
+  		<h2>fin!</h2>
+  		<p>we're done</p>
+  		<p>please show this to Gilad</p>
+  	</div>
+  	
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://localhost:3001/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+  
+</body>
+</html>
