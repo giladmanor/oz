@@ -166,7 +166,7 @@ ul {
   height: 30px;
   left: 0;
   outline: none;
-  padding-lzeft: 10px;
+  padding-left: 10px;
   position: absolute;
   right: 0;
   width: 20em;
@@ -175,4 +175,5 @@ ul {
 
 .intro{
 	color:#dadada;
+	padding:1em;
 }

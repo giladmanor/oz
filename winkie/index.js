@@ -53,7 +53,7 @@ io.on('connection', function(socket) {
 		setTimeout(function() {
 			socket.emit('new message', {
 				username : "node",
-				message : "please click the button",
+				message : "please fix the button",
 				jsshow : ".t1"
 			});
 		}, 1000);

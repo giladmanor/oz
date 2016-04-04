@@ -14,9 +14,8 @@
 				<input class="inputMessage" placeholder="Type here..."/>
 			</li>
 			<li class="login page">
-				<div class="form">
-
-					<div class="intro">
+				
+				<div class="intro">
 						<p>
 							This test is intended to see how you would handle problems, including things you have no prior knowledge of
 						</p>
@@ -38,7 +37,9 @@
 						<p>
 							refresh this page
 						</p>
-					</div>
+					</div><div class="form">
+
+					
 					<h3 class="title">name please?</h3>
 					<input class="usernameInput" type="text" maxlength="14" />
 				</div>
@@ -55,11 +56,21 @@
 			<div class="t2 hide">
 				<h2>AWESOME!</h2>
 				<p>
-					next chalange is fixing the count for clicks on
+					next challenge is fixing the counter for clicks on
 					<button onclick="sendT2()">
 						this
 					</button>
 					in the ruby controller
+					
+					<p>
+					<div class="hint hide">
+						the controller is at: <strong>ojo/app/controllers/api_controller.rb</strong>
+					</div>
+					<button onclick="$('.hint').fadeIn()">hint</button>	
+					</p>
+					
+					
+					
 				</p>
 			</div>
 			<div class="t3 hide">
