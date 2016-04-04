@@ -46,7 +46,8 @@ io.on('connection', function(socket) {
 		socket.emit('new message', {
 			username : "node",
 			message : "welcome!",
-			jsshow : ".box"
+			jsshow : ".box",
+			jshide:".t0"
 		});
 		// echo globally (all clients) that a person has connected
 		setTimeout(function() {

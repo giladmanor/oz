@@ -1,45 +1,82 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>welcome to oz</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <ul class="pages">
-    <li class="chat page">
-      <div class="chatArea">
-        <ul class="messages"></ul>
-      </div>
-      <input class="inputMessage" placeholder="Type here..."/>
-    </li>
-    <li class="login page">
-      <div class="form">
-        <h3 class="title">Hi, What's your name?</h3>
-        <input class="usernameInput" type="text" maxlength="14" />
-      </div>
-    </li>
-  </ul>
-  <div class="box hide">
-  	<h2>:)</h2>
-  	<div class="t1 hide">
-  		<button onclick="sendT1()">click me</button>
-  	</div>
-  	<div class="t2 hide">
-  		<h2>AWESOME!</h2>
-  		<p>next chalange is fixing the count for clicks on <button onclick="sendT2()">this</button> in the ruby controller</p>
-  	</div>
-  	<div class="t3 hide">
-  		<h2>fin!</h2>
-  		<p>we're done</p>
-  		<p>please show this to Gilad</p>
-  	</div>
-  	
-  </div>
+	<head>
+		<meta charset="UTF-8">
+		<title>welcome to oz</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<ul class="pages">
+			<li class="chat page">
+				<div class="chatArea">
+					<ul class="messages"></ul>
+				</div>
+				<input class="inputMessage" placeholder="Type here..."/>
+			</li>
+			<li class="login page">
+				<div class="form">
 
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="http://localhost:3001/socket.io/socket.io.js"></script>
-  <script src="/main.js"></script>
-  
-</body>
+					<div class="intro">
+						<p>
+							This test is intended to see how you would handle problems, including things you have no prior knowledge of
+						</p>
+						<p>
+							the repository named <strong>oz</strong> has two servers you will need to run
+						</p>
+						<p>
+							open a new cmd window and go to the oz directory
+						</p>
+						<p>
+							then go to the ojo directory and run rails by <strong>rails s</strong>
+						</p>
+						<p>
+							open a new cmd window and go to the oz directory
+						</p>
+						<p>
+							then go to the winkie directory and run node by <strong>node insdex.js</strong>
+						</p>
+						<p>
+							refresh this page
+						</p>
+					</div>
+					<h3 class="title">name please?</h3>
+					<input class="usernameInput" type="text" maxlength="14" />
+				</div>
+			</li>
+		</ul>
+		<div class="box hide">
+			<h2>:)</h2>
+
+			<div class="t1 hide">
+				<button onclick="sendT1()">
+					click me
+				</button>
+			</div>
+			<div class="t2 hide">
+				<h2>AWESOME!</h2>
+				<p>
+					next chalange is fixing the count for clicks on
+					<button onclick="sendT2()">
+						this
+					</button>
+					in the ruby controller
+				</p>
+			</div>
+			<div class="t3 hide">
+				<h2>fin!</h2>
+				<p>
+					we're done
+				</p>
+				<p>
+					please show this to Gilad
+				</p>
+			</div>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://localhost:3001/socket.io/socket.io.js"></script>
+		<script src="/main.js"></script>
+
+	</body>
 </html>

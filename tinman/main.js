@@ -244,16 +244,17 @@ $(function() {
 		}
 	});
 
-	sendT1 = function() {
+
+	var send = function(url){
 		addChatMessage({
 			username : "here",
-			message : "please implement a GET ajax call to 'http://localhost:3000/t1' for this button"
+			message : "please implement a GET ajax call here"
 			
 		});
 		
 		$.ajax({
 			type : "GET",
-			url : "http://localhost:3000/t1",
+			url : url,
 			crossDomain : true,
 			data : {},
 			dataType : 'json',
@@ -264,23 +265,19 @@ $(function() {
 				console.log(e);
 			}
 		});
+	};
+	
+	
+	
+	sendT1 = function() {
+		
+		send("http://localhost:3000/t1");
+		
 				
 	};
 	
 	sendT2 = function(){
-		$.ajax({
-			type : "GET",
-			url : "http://localhost:3000/t2",
-			crossDomain : true,
-			data : {},
-			dataType : 'json',
-			success : function(res){
-				console.log(res);
-			},
-			error : function(e) {
-				console.log(e);
-			}
-		});
+		send("http://localhost:3000/t2");
 	};
 
 });

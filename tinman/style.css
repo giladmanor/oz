@@ -41,7 +41,7 @@ ul {
 	top:2em;
 	left:2em;
 	bottom:2em;
-	width:10em;
+	width:20em;
 	padding:1em;
 	#border:solid 1px #808080;
 }
@@ -171,4 +171,8 @@ ul {
   right: 0;
   width: 20em;
   display:none;
+}
+
+.intro{
+	color:#dadada;
 }
