@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-var bodyParser = require('body-parser');
 app.use(bodyParser());
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
@@ -23,7 +22,6 @@ io.on('connection', function(socket) {
 	app.post("/post", function(req, res) {
 		console.log(".",req.body);
 		socket.broadcast.emit('new message', req.body);
-		res.send("ok");
 	});
 
 	// when the client emits 'new message', this listens and executes

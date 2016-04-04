@@ -252,19 +252,6 @@ $(function() {
 			
 		});
 		
-		$.ajax({
-			type : "GET",
-			url : url,
-			crossDomain : true,
-			data : {},
-			dataType : 'json',
-			success : function(res){
-				console.log(res);
-			},
-			error : function(e) {
-				console.log(e);
-			}
-		});
 	};
 	
 	
